@@ -1,0 +1,52 @@
+# @urlDev = http://167.172.88.152:8000/api/v1
+@urlDev = http://127.0.0.1:8000/api/v1
+
+POST {{urlDev}}/account/register
+Content-Type: application/json
+
+{
+    "email": "tiennguyen9073@yahoo.com.vn",
+    "password": "Nguyen1!duy12"
+}
+
+###
+POST {{urlDev}}/account/login
+Content-Type: application/json
+
+{
+    "email": "tiennguyen9073@yahoo.com.vn",
+    "password": "Nguyen231!duy12"
+}
+
+###
+POST {{urlDev}}/account/otp/verify
+Content-Type: application/json
+
+{
+    "ticket": "knwMjuMckDKvLP11.MTQ.MTY5Mjc1OTQ3Mg.MjM",
+    "code": "517554"
+}
+
+###
+POST {{urlDev}}/account/otp/refresh
+Content-Type: application/json
+
+{
+    "ticket": "v2kseQGwhfffTob7GbF.MTQ.MTY5MjYwMTM0MQ.MTM"
+}
+###
+POST {{urlDev}}/account/reset/send-mail
+Content-Type: application/json
+
+{
+    "email": "tiennguyen9073@yahoo.com.vn"
+}
+###
+POST {{urlDev}}/account/reset/tk/aqMrs3NH1e6jhXSO.MTQ.MTY5MjY3ODc0Mw.MQ/
+Content-Type: application/json
+
+{
+    "password": "Nguyen21!duy12",
+    "confirm_password":"Nguyen21!duy12"
+}
+
